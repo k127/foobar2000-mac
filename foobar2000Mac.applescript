@@ -21,7 +21,7 @@ on run
 	try
 		set setPath to "export WINEPREFIX=$HOME/.wine; export DYLD_FALLBACK_LIBRARY_PATH=/usr/X11/lib;"
 		set wine to "exec /opt/local/bin/wine"
-		set foobar2000 to "$HOME/.wine/dosdevices/c\\:/Program\\ Files/foobar2000/foobar2000.exe"
+		set foobar2000 to "$HOME/.wine/dosdevices/c\\:/Program\\ Files\\ \\(x86\\)/foobar2000/foobar2000.exe"
 		set ignoreErrors to ">/dev/null 2>&1 &"
 		do shell script setPath & space & wine & space & foobar2000 & space & ignoreErrors
 	end try
