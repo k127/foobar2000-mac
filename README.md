@@ -25,7 +25,7 @@ See the *Setup* section guide for setting up these required programs
 
 	Java
 	X11
-	MacPorts
+	Homebrew
 	Xcode and Command Line Tools
 	Wine
 	foobar2000 installer
@@ -51,11 +51,9 @@ otherwise, download and install the JRE from here:
 
 	http://java.com/en/download/mac_download.jsp?locale=en 
 	
-2) MacPorts must be installed. Ports gives you access to a repository like Linux has to find, install, and update thousands of free *nix programs that Apple left out. It does this by grabbing the software code required to build into a runnable program, builds, and installs it. It may take longer than downloading and installing a program that is ready to install, but programs and their dependencies are more likely to run better and faster, since it was built for your exact setup instead of being built for all setups. Download it here:
+2) Homebrew must be installed. Homebrew gives you access to a repository like Linux has to find, install, and update thousands of free *nix programs that Apple left out.
 
- This has a few steps which cost nothing but time, which are 
-
-	a) Download and install the macports installer from macports.org
+ 	a) Download and install the Homebrew installer from <https://brew.sh/>
 	
 	b) Install Xcode from Apple's *App Store*. It's free.
 	
@@ -64,25 +62,15 @@ otherwise, download and install the JRE from here:
 	Xcode -> Preferences, and then click the *Downloads* section; finally, click 
 	on the Install "Command Line Tools" option
 
-3) Once MacPorts is installed, then in a terminal use these command to update Ports, then install Wine: 
+3) Once Homebrew is installed, install Wine:
 
-    sudo port selfupdate
-    sudo port upgrade outdated
+    brew install wine
 
-Note: 
-	 If installing a new port program or upgrading outdated fails, restart your computer and try again. 
-	 This will clear out your system temp folder, and it will often fix any install problems.
+Depending on the speed of your computer, it might take a few hours to build and install wine, along with all it's resources it requires.
 
-<img src="https://raw.github.com/xeoron/foobar2000-mac/master/images/update_ports.png"/>
-    
-    sudo port install wine
+ If you want to search for other packages use this command
 
- Depending on the speed of your computer, it might take a few hours to build and install wine, along with all it's resources it requires.
-
- If you want to search for other Port programs use this command
- 
- 	port search key-word-to-find
-
+	brew search key-word-to-find
 
 4) Grab a copy of foobar2000. Download it here:
     
@@ -102,4 +90,4 @@ Note:
 
 Alternatives:
 =====
-If you prefer a simplier way get Foobar2000 running on OS X, then maybe <a href="http://www.codeweavers.com/">CrossOver</a> is a better choice, but doing so you won't have the MacPorts repository of programs you can natively build and install.
+If you prefer a simpler way get Foobar2000 running on OS X, then maybe <a href="http://www.codeweavers.com/">CrossOver</a> is a better choice, but doing so you won't have the Homebrew repository of programs you can natively build and install.
